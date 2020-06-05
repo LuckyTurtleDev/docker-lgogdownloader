@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    lgogdownloader:
+        build: .
+        container_name: lgogdownloader
+        environment:
+            - GOG_EMAIL=
+            - GOG_PASSWORD=
+            - INTERVALL=1d
+        volumes:
+            - './data:/home/user/download'
+        command: --help
+        restart: unless-stopped
