@@ -1,7 +1,7 @@
 version: '3.3'
 services:
     lgogdownloader:
-        build: .
+        image: lukas1818/lgogdownloader
         container_name: lgogdownloader
         environment:
             - GOG_EMAIL=
